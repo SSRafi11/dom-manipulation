@@ -31,8 +31,16 @@ $('#addText4').click(function(event){
     var paragraph = $('<p>').text('Hello World')
     $('#task4a').append(paragraph)
 })
-//4b
+// Task 4b
 function changeBG(event){
     var color= event.target.innerText.toLowerCase();
     $('body').css('background-colour', color)
 }
+
+
+//Task 4c
+$('#sum').click(function(event){
+    var sum =Number( $('#num1').val()) + Number($('#num2').val())
+    $('#answer').text(sum)
+}
+)
